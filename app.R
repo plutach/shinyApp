@@ -81,7 +81,7 @@ server <- function(input, output, session) {
     conn <- dbConnect(
       drv = RPostgreSQL::PostgreSQL(),
       dbname = "logdb",
-      host = "192.168.10.232",
+      host = "127.0.0.1",
       user = "postgres",
       password = "!123qwe")
     on.exit(dbDisconnect(conn), add = TRUE)
