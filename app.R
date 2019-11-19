@@ -9,13 +9,10 @@ library(magrittr)
 pool <- dbPool(
   drv = RPostgreSQL::PostgreSQL(),
   dbname = "logdb",
-  host = "192.168.10.232",
+  host = "localhost",
   user = "postgres",
-  password = "!123qwe"
-  
-  
-  
-  )
+  password = "123123"
+ )
 
 
 
